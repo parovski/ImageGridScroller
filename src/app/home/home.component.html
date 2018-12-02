@@ -1,0 +1,21 @@
+<!-- home page html -->
+<div class="container mt-5">
+
+  <!-- with *ngFor you list all the items of finalData, finalData is defined in home.component.ts -->
+  <div class="row d-flex justify-content-center" *ngFor="let final of finalData">
+    <!-- data binding -> here we are listing all the items 1 level deeper in the finalData, with finalData[0]  -->
+    <div class="mb-3 grid-style" *ngFor="let d of finalData[0]" placement="top" [ngbTooltip]="tipContent">
+      <ng-template #tipContent>
+        <div class="row tooltip-style" [innerHTML]=d.description></div>
+        <!-- {{d.description}} -->
+      </ng-template>
+      <!-- <h5 class="text-center title">Title</h5> -->
+      <h6 class="card-title text-center"> {{ d.title}} </h6>
+      <div class="card-body">
+        <img src="{{ d.media.m }}" class="img-style">
+      </div>
+    </div>
+
+  </div>
+
+</div>

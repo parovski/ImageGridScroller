@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+
+.tooltip-inner {
+  background-color: #000000 !important;
+  color: white;
+  font-size: 9px !important;
+  width: 450px !important;
+  text-align: center;
+
+}
+.arrow::before {
+  border-top-color: #5f5f5f !important;
+}
+
+.tooltip-inner.a {
+color: beige !important;
+text-align: center;
+}
+
+.tooltip-inner a {
+padding: 20px;
+color:#ffffff;
+  }
+
+.tooltip-inner img {
+    width: 80%;
+      }
